@@ -5,7 +5,7 @@ const sockio = require("socket.io");
 const server = http.createServer((req, res) => {
     res.end("For replication");
 });
-server.listen(80);
+server.listen(4000);
 const io = sockio(server);
 io.on("connection", socket => {
     console.log("added client");
